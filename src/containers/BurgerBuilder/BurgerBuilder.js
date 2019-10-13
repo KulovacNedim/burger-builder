@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 
 import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
 import Burger from '../../components/Burger/Burger';
@@ -10,7 +10,6 @@ import Spinner from '../../components/UI/Spinner/Spinner';
 import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
 import * as actions from '../../store/actions/index';
 import axios from '../../axios-orders';
-
 
 
 class BurgerBuilder extends Component {
@@ -35,7 +34,11 @@ class BurgerBuilder extends Component {
     }
 
     purchaseHandler = () => {
-        this.setState({purchasing: true});
+        if (this.props.isAuthenticated) {
+            this.setState({purchasing: true});
+        } else {
+            this.props.history.push("/auth");
+        }
     }
 
     purchaseCancelHandler = () => {
@@ -66,7 +69,8 @@ class BurgerBuilder extends Component {
                         disabled={disabledInfo}
                         price={this.props.price}
                         purchasable={this.updatePurchaseState(this.props.ings)}
-                        ordered={this.purchaseHandler}/>
+                        ordered={this.purchaseHandler}
+                        isAuth={this.props.isAuthenticated}/>
                 </Auxiliary>
             );
             orderSummary = <OrderSummary
@@ -91,7 +95,8 @@ const mapStateToProps = state => {
     return {
         ings: state.burgerBuilder.ingredients,
         price: state.burgerBuilder.totalPrice,
-        error: state.burgerBuilder.error
+        error: state.burgerBuilder.error,
+        isAuthenticated: state.auth.token !== null
     };
 }
 
