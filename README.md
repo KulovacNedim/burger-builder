@@ -4,6 +4,10 @@
 
 <img src="burgerbuilder.png" title="burgerbuilder" alt="burgerbuilder.png">
 
+
+## DEMO
+[Click to see application in action](https://react-burger-app-ff8c2.firebaseapp.com/)
+
 ## Tags
 
 - v1.0 - Basic application
