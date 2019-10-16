@@ -1,4 +1,4 @@
-## [Burger Builder App (click to see DEMO)](https://react-burger-app-ff8c2.firebaseapp.com/)
+## [Burger Builder App (click to see demo)](https://react-burger-app-ff8c2.firebaseapp.com/)
 
 [React - The Complete Guide (incl Hooks, React Router, Redux) | Udemy](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
 
@@ -10,9 +10,9 @@
 
 ## Tags
 
-- v1.0 - Basic application
-- v2.0 - Redux added to manage state
-- v3.0 - Authentication and authorization implemented
+- [v1.0](https://github.com/KulovacNedim/burger-builder/tree/v1.0) - Basic application
+- [v2.0](https://github.com/KulovacNedim/burger-builder/tree/v2.0) - Redux added to manage state
+- [v3.0](https://github.com/KulovacNedim/burger-builder/tree/v3.0) - Authentication and authorization implemented
 
 ## Clone
 
