@@ -13,6 +13,7 @@
 - [v1.0](https://github.com/KulovacNedim/burger-builder/tree/v1.0) - Basic application
 - [v2.0](https://github.com/KulovacNedim/burger-builder/tree/v2.0) - Redux added to manage state
 - [v3.0](https://github.com/KulovacNedim/burger-builder/tree/v3.0) - Authentication and authorization implemented
+- [v4.0](https://github.com/KulovacNedim/burger-builder/tree/v4.0) - Hooks implemented to manage internal component's state
 
 ## Clone
 
